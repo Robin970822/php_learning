@@ -6,7 +6,8 @@
  * Time: 11:21
  */
 
-function getLevel($score){
+function getLevel($score)
+{
     if ($score > 90) {
         return 'perfect';
     } else {

@@ -6,7 +6,8 @@
  * Time: 10:07
  */
 
-function traceHelloPHP(){
+function traceHelloPHP()
+{
     echo 'Hello PHP <br>';
     echo 'Hello World<br>';
 }
@@ -16,7 +17,8 @@ traceHelloPHP();
 $func = 'traceHelloPHP';
 $func();
 
-function sayHelloTo($name){
+function sayHelloTo($name)
+{
     echo "Hello $name <br>";
 }
 

@@ -6,6 +6,6 @@
  * Time: 11:25
  */
 
-for ($i=0; $i < 100; $i++) {
+for ($i = 0; $i < 100; $i++) {
     echo "Hello $i <br>";
 }
