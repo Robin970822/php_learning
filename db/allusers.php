@@ -16,6 +16,7 @@ require_once 'functions.php'
         <th>name</th>
         <th>age</th>
         <th>Edit</th>
+        <th>Delete</th>
     </tr>
     <?php
     $conn = connectDb();
@@ -27,7 +28,7 @@ require_once 'functions.php'
         $id = $resultArr['id'];
         $name = $resultArr['name'];
         $age = $resultArr['age'];
-        echo "<tr><td>$id</td><td>$name</td><td>$age</td><td><a href='edituser.php?id=$id'>Edit</a></td></tr>";
+        echo "<tr> <td>$id</td> <td>$name</td> <td>$age</td> <td><a href='edituser.php?id=$id'>Edit</a></td><td><a href='deleteuser.php?id=$id'>Delete</a></td> </tr>";
     }
     ?>
 </table>
