@@ -11,8 +11,7 @@ require_once 'config.php';
 function connectDb()
 {
     $conn = mysqli_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD);
-    if (!$conn)
-    {
+    if (!$conn) {
         die('can not connect DB');
     }
     mysqli_select_db($conn, 'myapp');

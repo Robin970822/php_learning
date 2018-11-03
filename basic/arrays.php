@@ -14,5 +14,5 @@ $arr[3] = 3.14;
 $arr['h'] = 'Hello';
 
 print_r($arr);
-echo '<br>'.count($arr);
+echo '<br>' . count($arr);
 

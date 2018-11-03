@@ -10,11 +10,10 @@
 
 $f = fopen('data', 'w');
 
-if($f)
-{
+if ($f) {
     fwrite($f, 'Hello PHP');
     fclose($f);
-}else {
+} else {
     echo 'Fail';
 }
 

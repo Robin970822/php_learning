@@ -15,21 +15,21 @@ require_once 'functions.php'
         <th>id</th>
         <th>name</th>
         <th>age</th>
+        <th>Edit</th>
     </tr>
-<?php
-$conn = connectDb();
-$result = mysqli_query($conn, "SELECT * FROM users ORDER BY id DESC");
-$dataCount = mysqli_fetch_array(mysqli_query($conn, "SELECT COUNT(*) FROM users"))[0];
+    <?php
+    $conn = connectDb();
+    $result = mysqli_query($conn, "SELECT * FROM users ORDER BY id DESC");
+    $dataCount = mysqli_fetch_array(mysqli_query($conn, "SELECT COUNT(*) FROM users"))[0];
 
-for ($i = 0; $i < $dataCount; $i++)
-{
-    $resultArr = mysqli_fetch_assoc($result);
-    $id = $resultArr['id'];
-    $name = $resultArr['name'];
-    $age = $resultArr['age'];
-    echo "<tr><td>$id</td><td>$name</td><td>$age</td></tr>";
-}
-?>
+    for ($i = 0; $i < $dataCount; $i++) {
+        $resultArr = mysqli_fetch_assoc($result);
+        $id = $resultArr['id'];
+        $name = $resultArr['name'];
+        $age = $resultArr['age'];
+        echo "<tr><td>$id</td><td>$name</td><td>$age</td><td><a href='edituser.php?id=$id'>Edit</a></td></tr>";
+    }
+    ?>
 </table>
 </body>
 </html>

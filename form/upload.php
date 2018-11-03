@@ -16,7 +16,7 @@
 
 $file = $_FILES['file'];
 $fileName = $file['name'];
-move_uploaded_file($file['tmp_name'], '../upload/'.$fileName);
+move_uploaded_file($file['tmp_name'], '../upload/' . $fileName);
 
 echo "<img src='../upload/$fileName'>";
 ?>

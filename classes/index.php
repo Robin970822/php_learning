@@ -10,4 +10,4 @@ require_once 'hello.php';
 
 $h = new Hello();
 
-$h -> sayHello();
+$h->sayHello();
